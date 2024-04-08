@@ -1,0 +1,32 @@
+section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+.tabl thead td {
+  font-weight: 500;
+  color: #151528;
+}
+.tabl td {
+  padding: 14px 16px;
+}
+.tabl {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+}

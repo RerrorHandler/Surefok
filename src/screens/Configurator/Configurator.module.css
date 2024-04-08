@@ -1,0 +1,39 @@
+.ul {
+    list-style-type: disc;
+}
+.main {
+    margin-top: 20px;
+}
+.config_manager {
+    width: 25%;
+    height: 600px;
+    padding: 20px 20px;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 13px 0;
+    font-size: 26px;
+    width: 100%;
+    transition: 0.3s ease-in;
+}
+.btn_1 {
+    background-color: #6996C7;
+    color: #fff;
+}
+.btn_1:hover {
+    background-color: #7fa8d5;
+
+}
+.btn_2 {
+    background-color: #fff;
+}
+.btn_2:hover {
+    color: #fff;
+    background-color: #6996C7;
+
+}

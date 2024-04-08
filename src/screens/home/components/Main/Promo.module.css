@@ -1,0 +1,35 @@
+.main_center {
+    border-radius: 10px;
+    height: 155px;
+    padding: 0 40px;
+    margin: 70px 0px 45px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #8e91d1;
+}
+.main_center p {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 28px;
+}
+.main_center_flex {
+    display: flex; 
+}
+.main_center_flex button {
+    background-color: #8e91d1;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: #C6C6C6;
+    transition: 0.2s ease-in-out;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.main_center_flex button:hover {
+    color: white;
+    text-decoration: none;
+}
+.main_center_flex button:first-child {
+    margin-right: 30px;
+}

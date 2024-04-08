@@ -1,0 +1,101 @@
+.main_top {
+    margin: 70px 0 45px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_top button {
+    background-color: #eee;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s ease-in;
+    color: #9FA2E5;
+    border-bottom: 1px dashed #9FA2E5;
+    text-underline-offset: 4px;
+    padding: 0 1px 5px 1px;
+}
+.main_top button:hover {
+    color: #8589d0;
+    border-bottom: 1px dashed #8589d0;
+}
+
+.main_bot_flex {
+    min-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.main_bot_flex_item {
+    /* width: 100px; */
+    /* flex:0 1 calc(20% - 8px); */
+    width: 24%;
+    margin: 4px;
+}
+
+.main_bot_flex_item_but {
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    height: 100%;
+}
+
+.main_bot_flex_item_but:hover {
+    border-radius: 5px;
+    color: #7c7fb6;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.1s ease-in-out;
+}
+
+.main_bot_flex_item_but img {
+    padding-bottom: 10px;
+    width: 75%;
+    margin-bottom: 30px;
+}
+
+.main_bot_flex_item_but span {
+    margin-bottom: 5px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.main_bot_flex_item_but div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #000000;
+}
+
+.main_bot_flex_item_but div p {
+    font-size: 20px;
+}
+
+.main_bot_flex_item_but div button {
+    display: flex;
+    align-items: center;
+    color: #f0f0f0;
+    background-color: #8e91d1;
+    padding: 8px 17px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.main_bot_flex_item_but div button:hover {
+    background-color: #7c7fb6;
+    transition: 0.2s ease-in;
+}
