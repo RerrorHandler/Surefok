@@ -7,13 +7,7 @@ function Footer() {
             <div className={`${styles_g.container}`}>
                 <div className={`${styles.parent}`}>
                     <div className={`${styles.div1}`}>
-                        1
-                    </div>
-                    <div className={`${styles.div2}`}>
-                        2
-                    </div>
-                    <div className={`${styles.div3}`}>
-                        3
+                        2024-2024 SuRe:Fok - интернет магазин компьютероной техники
                     </div>
                 </div>
             </div>

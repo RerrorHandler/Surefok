@@ -3,6 +3,7 @@ import styles from '../cart/Cart.module.css'
 import styles_g from '../../components/styles/Global.module.css'
 import Header from '../home/components/Header/Header'
 import { useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 
 
@@ -20,8 +21,10 @@ import { useLocation } from 'react-router-dom';
 const Cart = () => {
     const location = useLocation();
 
-    let myObject = location.state;
+    let myObject = location.state.myObject;
+    let myPrice = location.state.price;
     console.log(myObject)
+    console.log(myPrice)
     const nav = useNavigate()
 
     const handleCall = () => {
@@ -30,7 +33,7 @@ const Cart = () => {
         let string = names.join(', ');
         console.log(string); // 'John, Alice, Bob'
 
-        let json = `Добрый день! Пишу по поводу покупки данной сборки: ${string}`
+        let json = `Добрый день! Пишу по поводу покупки данной сборки: ${string}. Цена: ${myPrice} тенге.`
         window.location.href = `https://wa.me/87760061908?text=${json}`;
     };
     return (
@@ -40,7 +43,11 @@ const Cart = () => {
                 <div className='shadow-xl mt-2 pt-8 pl-4 pr-4'>
                     <div className='flex items-center justify-between'>
                         <h1 className='text-3xl'>Ваша корзина</h1>
-                        <button className={styles.back} onClick={() => handleCall()}>Купить</button>
+
+                        <div>
+                            <button className={styles.back} onClick={() => handleCall()}>Купить</button>
+                            <h1 className={styles.h1_price}>{myPrice} ₸</h1>
+                        </div>
                     </div>
 
                     <div className='flex flex-row justify-between'>
@@ -55,7 +62,7 @@ const Cart = () => {
                             {
                                 myObject != null ?
                                     myObject.map((Video_card) => (
-                                        <div>
+                                        <div key={Video_card.id}>
                                             <li className='p-4 flex flex-row space-x-12 w-11/12 mt-8 rounded-xl border-2 border-zinc-300 shadow-lg'>
                                                 <img src="https://www.ironbook.ru/upload/resize_cache/iblock/877/877de3a302f6eb2ddb43abb5bc188c99/120_120_1/palit_gt_730.jpg" className=' w-32 h-32' />
                                                 <div className=''>

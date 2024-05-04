@@ -10,7 +10,7 @@ const Delivery = () => {
       <section className={`${styles_g.container}`}>
         <h2 className='text-3xl'>Доставка</h2>
         <p>Мы предлагаем удобную доставку в любую точку города.</p>
-        <p className='mt-4 text-2xl text-blue-600 rounded-xl bg-white p-4'>Ежедневно с 10:00 до 22:00</p>
+        <p className='mt-4 text-2xl text-blue-600 rounded-xl bg-white p-4'>Ежедневно с 10:00 до 20:00</p>
         <table className={`${styles.tabl}`}>
         <thead>
           <tr>

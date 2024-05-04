@@ -37,15 +37,15 @@ function Header() {
                         <li>
                             <button onClick={() => nav('/configurator/')}>Конфигуратор ПК</button>
                         </li>
-                        <li>
-                            <button onClick={() => nav('/delivery/')}>Доставка и оплата</button>
-                        </li>
+                        {/* <li> */}
+                            {/* <button onClick={() => nav('/delivery/')}>Доставка и оплата</button> */}
+                        {/* </li> */}
                         <li>
                             <button onClick={() => nav('/warranty/')}>Гарантия</button>
                         </li>
-                        <li>
+                        {/* <li>
                             <button><CallButton phoneNumber="Контакты" /></button>
-                        </li>
+                        </li> */}
                     </ul>
                     <div className={styles.top_block_flex_rigth}>
                         <div className={styles.header_icon_text}>

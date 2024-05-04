@@ -18,11 +18,11 @@ function Main() {
       </header>
       <main>
         <div className={`${styles_g.container} ${styles.wrap_blocks}`}>
-          <Categori />
+          {/* <Categori /> */}
           <Products />
           <Promo />
           <Hits />
-          <Reviews />
+          {/* <Reviews /> */}
         </div>
       </main>
     </div>
