@@ -36,7 +36,6 @@ function Header() {
                         </li>
                         <li>
                             <button onClick={() => nav('/configurator/')}>Конфигуратор ПК</button>
-                            <button onClick={() => ym(97096666,'reachGoal','btn-click-me')}>click</button>
                         </li>
                         {/* <li> */}
                             {/* <button onClick={() => nav('/delivery/')}>Доставка и оплата</button> */}
